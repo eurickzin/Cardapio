@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" type="imagex/png" href="./assets/ico-burguer.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Hamburgueria do Gordinho</title>
+</head>
+<body>
+
+    <header class="w-full h-[420px] bg-zinc-900 bg-home  bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="assets/logo.png" 
+            alt=""
+            class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
+
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white rounded-md"
+            >Hamburgueria do Gordinho</h1>
+
+            <span class="text-white font-medium rounded-md p-1">Rua dos Bobos N°0 - Natal/RN</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg à Dom - 18:00 as 22:00</span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">Conheça nosso menu</h2>
+
+    <div id="menu">
+
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+
+            <div class="flex gap-2 ">
+                <img src="./assets/burguer1.jpg"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Burguer Gorduxo</p>
+                    <p class="text-sm">Carne grelhada, queijo cheddar derretido, bacon crocante, tudo num brioche dourado. Sabor intenso em cada mordida.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 22.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Burguer Gorduxo"
+                        data-price="22.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="./assets/burguer2.jpg"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Burguer Gordinho</p>
+                    <p class="text-sm">Carne suculenta grelhada, queijo derretido, alface fresca, tomate maduro e pão tostado. Uma combinação perfeita para satisfazer seu paladar.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 16.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Burguer Gordinho"
+                        data-price="16.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="./assets/burguer3.jpg"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Burguer Barrigudo</p>
+                    <p class="text-sm">Carne suculenta, queijo gouda derretido, cebola caramelizada e maionese artesanal, no pão brioche tostado. Sabor intenso em cada mordida.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 16.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Burguer Barrigudo"
+                        data-price="16.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="./assets/burguer4.jpg"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Burguer Guloso</p>
+                    <p class="text-sm">Burger Guloso: Calabresa grelhada, queijo cheddar derretido em pão brioche tostado. Uma indulgência irresistível para os amantes de sabores intensos.
+
+                    </p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 35.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Burguer Guloso"
+                        data-price="35.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="./assets/burguer5.jpg"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Burguer Gula</p>
+                    <p class="text-sm">Carne suculenta, queijo gorgonzola derretido, cebolas caramelizadas e maionese de alho, tudo no pão azul. Uma explosão de sabores gourmet.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19.90</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Burguer Gula"
+                        data-price="19.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 ">
+                <img src="./assets/burguer6.jpg"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+                <div>
+                    <p class="font-bold">Burguer Gordelícia</p>
+                    <p class="text-sm">Saboreie um hambúrguer suculento e grande, com queijo derretido e um molho especial irresistível. Uma explosão de sabores intensos em cada mordida.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 26.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Burguer Gordelícia"
+                        data-price="26.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl my-2 px-2">
+            <h2 class="font-bold text-3xl"
+            >Bebidas</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+
+            <div class="flex gap-2 w-full">
+
+                <img src="./assets/bebida (4).png"
+                class="w-15 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Coca Cola</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Coca Cola"
+                        data-price="6.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full">
+                
+                <img src="./assets/bebida (1).png"
+                class="w-15 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Fanta laranja</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Fanta laranja"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 w-full">
+                
+                <img src="./assets/bebida (2).png"
+                class="w-15 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Guaraná</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Guaraná"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex gap-2 w-full">
+                
+                <img src="./assets/bebida (3).png"
+                class="w-15 h-28 rounded-md hover:scale-110 hover:rotate-2 duration-300">
+
+                <div class="w-full">
+                    <p class="font-bold">Sprite</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 5.00</p>
+                        <button class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="Sprite"
+                        data-price="5.00">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] hidden items-center justify-center "
+    id="cart-modal">
+
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2 ">Meu carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+            </div>
+
+            <p class="font-bold">Total: <span id="cart-total">00.00</span></p>
+
+            <p class="font-bold mt-4">Endereço de entrega</p>
+
+            <input 
+            type="text"
+            placeholder="Digite seu endereço completo"
+            id="adress"
+            class="w-full border-2 p-1 rounded my-1">
+
+            <p 
+            class="text-red-500 hidden"
+            id="adress-warn"
+            >Digite seu endereço completo</p>
+
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button class="" id="close-modal-btn">Fechar</button>
+                <button class=" bg-green-500 text-white px-4 py-1 rounded" id="chekout-btn">Finalizar pedido</button>
+            </div>
+
+
+        </div>
+    </div>
+
+    <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex  items-center gap-2 text-white font-bold"
+        id="cart-btn">
+            (<span id="cart-count" class=""></span>)
+            Ver meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
