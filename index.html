@@ -6,6 +6,7 @@
 
     <link rel="shortcut icon" type="imagex/png" href="./assets/ico-burguer.ico">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -264,7 +265,7 @@
 
             <div class="flex items-center justify-between mt-5 w-full">
                 <button class="" id="close-modal-btn">Fechar</button>
-                <button class=" bg-green-500 text-white px-4 py-1 rounded" id="chekout-btn">Finalizar pedido</button>
+                <button class=" bg-green-500 text-white px-4 py-1 rounded" id="checkout-btn">Finalizar pedido</button>
             </div>
 
 
@@ -274,11 +275,13 @@
     <footer class="w-full bg-red-500 py-3 fixed bottom-0 z-40 flex items-center justify-center">
         <button class="flex  items-center gap-2 text-white font-bold"
         id="cart-btn">
-            (<span id="cart-count" class=""></span>)
+            (<span id="cart-count" class="">0</span>)
             Ver meu carrinho
             <i class="fa fa-cart-plus text-lg text-white"></i>
         </button>
     </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="script.js"></script>
 </body>
 </html>
