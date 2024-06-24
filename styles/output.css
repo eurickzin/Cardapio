@@ -691,6 +691,18 @@ video {
   z-index: 99;
 }
 
+.z-\[\] {
+  z-index: ;
+}
+
+.z-\[999999\] {
+  z-index: 999999;
+}
+
+.z-\[999\] {
+  z-index: 999;
+}
+
 .float-start {
   float: inline-start;
 }
